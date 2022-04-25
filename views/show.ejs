@@ -12,24 +12,22 @@
         <section class="display">
             <div>
                 <img src="<%= product.img %> " alt="">
-                <a href="/reviews/<%= product._id %>"><p>Review Item</p></a>
-            </div>
-            <div>
-                <table>
-                    <tr>
-                        <td class="first-cell">In Stock:</td>
-                        <td><%= product.qty %> </td>
-                    </tr>
-                    <tr>
-                        <td class="first-cell">Price:</td>
-                        <td>$<%= product.price %></td>
-                    </tr>
-                    <tr>
-                        <td class="first-cell">Description:</td>
-                        <td><%= product.description %></td>
-                    </tr>                   
-                </table>
-            </div>
+                <a href="/reviews/<%= product._id %>">Review Item</a>
+            </div>            
+            <table>
+                <tr>
+                    <td class="first-cell">In Stock:</td>
+                    <td><%= product.qty %> </td>
+                </tr>
+                <tr>
+                    <td class="first-cell">Price:</td>
+                    <td>$<%= product.price %></td>
+                </tr>
+                <tr>
+                    <td class="first-cell">Description:</td>
+                    <td><%= product.description %></td>
+                </tr>                   
+            </table>
         </section>
 
         <section class="reviews">

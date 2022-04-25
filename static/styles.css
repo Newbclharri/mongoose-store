@@ -59,7 +59,7 @@ header, header *{
 }
 
 
-/* Show.ejs */
+/* Show.ejs -------------------------------------------------*/
 
 #show_ejs .product-name{
     margin: auto;
@@ -92,8 +92,8 @@ nav a{
     justify-content: center;
 }
 
-#show_ejs div{
-    width: fit-content;
+#show_ejs table{
+    width: max-content;
 }
 
 #show_ejs .first-cell{
@@ -105,11 +105,11 @@ nav a{
     border-bottom: 1px solid var(--tableBorderColor);
 }
 
-.reviews .customer{
+#show_ejs .reviews .customer{
     font-size: 15px;
 }
 
-.reviews p{
+#show_ejs .reviews p{
     width: 25%;
     margin: auto;
 }
