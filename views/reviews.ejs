@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html class="reviews_ejs" lang="en">
+    <%- include("partials/head.ejs") %> 
+<body>
+    <header>
+        <h1>Create Review</h1>
+    </header>
+    <nav><a href="/">store</a></nav>
+    <main>
+        <form action="/reviews/<%= item %>" method="post">
+            <input type="text" placeholder="what did you like or dislike?" name="text">            
+    
+            <div class="button">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </main>
+    
+</body>
+</html>

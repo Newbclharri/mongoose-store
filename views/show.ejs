@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html id="show_ejs" lang="en">
+    <%- include("partials/head.ejs") %> 
+<body>
+    <header>
+        <h1 class="product-name"><%= product.name %></h1>
+    </header>
+    <nav>
+        <a href="/">store</a>
+    </nav>
+    <main>
+        <section class="display">
+            <div>
+                <img src="<%= product.img %> " alt="">
+                <a href="/reviews/<%= product._id %>"><p>Review Item</p></a>
+            </div>
+            <div>
+                <table>
+                    <tr>
+                        <td class="first-cell">In Stock:</td>
+                        <td><%= product.qty %> </td>
+                    </tr>
+                    <tr>
+                        <td class="first-cell">Price:</td>
+                        <td>$<%= product.price %></td>
+                    </tr>
+                    <tr>
+                        <td class="first-cell">Description:</td>
+                        <td><%= product.description %></td>
+                    </tr>                   
+                </table>
+            </div>
+        </section>
+
+        <section class="reviews">
+            <h1>Customer Reviews</h1>
+            <% for(review of reviews) {%>
+                <p class="customer">Anonymous Customer</p>
+                <p><%= review.text %> </p> <br>
+                <% } %> 
+        </section>
+    </main>
+</body>
+</html>

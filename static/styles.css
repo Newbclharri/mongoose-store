@@ -1,0 +1,147 @@
+:root{
+    --bgColorDark: rgba(219, 213, 213, 0.733);
+    --bgColorLight: white;
+    --navBgColor: rgb(102, 145, 173);
+    --navColor: white;
+    --tableBorderColor: lightgray;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px auto;
+    padding: 0px;
+    /* border: 1px solid red; */
+}
+
+body{
+   
+    display: flexbox;
+    justify-content: center;
+    background-color: var(--bgColorDark);
+}
+
+a:link, a:visited{
+    text-decoration: none;
+}
+
+main{
+    width: 80%;
+}
+
+section{
+    background-color: var(--bgColorLight);
+    padding-top: 20px;
+}
+
+
+header, header *{
+    margin: 0px auto;
+    /* display: flexbox;
+    align-items: center;
+    justify-content: center; */
+    text-align: center;
+    background-color: rgb(15, 2, 2);
+    color: white;
+}
+
+#divider{
+    background-color: red;
+}
+
+
+.index_ejs #products{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* Show.ejs */
+
+#show_ejs .product-name{
+    margin: auto;
+    width: fit-content;
+}
+
+
+#show_ejs header{
+    border: 2px solid black;
+}
+
+nav{
+    margin-top: -5px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--navBgColor);
+}
+
+nav a{
+    color: var(--navColor);    
+}
+
+#show_ejs .display{
+    margin: 2% auto;
+    display: grid;
+    grid-template-columns: 40vh 40vh;
+    gap: 10px;
+    /* width: fit-content; */
+    align-items: center;
+    justify-content: center;
+}
+
+#show_ejs div{
+    width: fit-content;
+}
+
+#show_ejs .first-cell{
+    text-align: right;
+}
+
+#show_ejs td{
+    padding-left: 5px;
+    border-bottom: 1px solid var(--tableBorderColor);
+}
+
+.reviews .customer{
+    font-size: 15px;
+}
+
+.reviews p{
+    width: 25%;
+    margin: auto;
+}
+
+/* reviews.ejs ____________________________________________*/
+
+.reviews_ejs *{
+margin: 0 auto;
+}
+.reviews_ejs body{
+    background-color: white;
+    
+}
+
+.reviews_ejs main{
+    display: grid;
+    width: 50%;
+}
+
+.reviews_ejs form{
+    position: relative;
+    width: 100%;
+}
+
+.reviews_ejs input[type="text"]{
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+.reviews_ejs .button{
+    width: 100%;
+    display: grid;
+   justify-content: right;
+   align-items: right;
+}

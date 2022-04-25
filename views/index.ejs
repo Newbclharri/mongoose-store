@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html class="index_ejs" lang="en">
+    <%- include("./partials/head.ejs")%> 
+    <body>
+        <header>
+            <h1 style="width: fit-content;">
+                store.ga
+            </h1>
+            
+            <div style="width: fit-content;">
+                <div id="divider" style="height: 1px; width: 100%"></div>
+                <div>random things life just can't do without</div>
+            </div>
+        </header>
+
+        <main>
+            <section id="products">
+                <% for(product of products) {%>
+                    <div class="product">
+                        <a href="/<%= product._id %>"><img src="<%= product.img  %> " alt="<%= product.name %> "></a>
+                        <div><%= product.name %></div>
+                        <div>$<%= product.price %></div>
+                        <div>In Stock: <%= product.qty %></div>
+                        <form action="">
+                            <input style="width: 30%" type="submit" value="Buy">
+                        </form>
+                    </div>
+                    <% } %> 
+            </section>             
+        </main>
+        
+    </body>
+</html>
